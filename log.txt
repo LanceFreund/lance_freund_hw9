@@ -1,0 +1,58 @@
+commit 08a02fc5844066aefd5d635c0a17038af16dd431
+Author: LanceFreund <lancefreund@mail.weber.edu>
+Date:   Wed Dec 7 22:28:11 2016 -0700
+
+    Detailed the README
+    
+    Described installing node js and how the script functions
+
+commit 7ded9f4aeea780d3ee93bc50a4c8c2d402493617
+Author: Lance Freund <lancefreund@mail.weber.edu>
+Date:   Wed Dec 7 22:09:41 2016 -0700
+
+    Turning in
+
+commit b8451a57ca0eaba2a864ef77b68113c88ac78378
+Author: Lance Freund <lancefreund@mail.weber.edu>
+Date:   Wed Dec 7 21:58:00 2016 -0700
+
+    final touchs
+
+commit 3c71a3bbf0c71a3ff7f313b65350810f132ac9fc
+Merge: 8a246b9 7415492
+Author: Lance Freund <lancefreund@mail.weber.edu>
+Date:   Wed Dec 7 21:50:24 2016 -0700
+
+    Merge branch 'master' of https://github.com/LanceFreund/lance_freund_hw9
+    
+    git problems
+
+commit 8a246b9992bd35bcc880b6735c4da11694ccd54c
+Author: Lance Freund <lancefreund@mail.weber.edu>
+Date:   Wed Dec 7 21:41:50 2016 -0700
+
+    It works
+
+commit 69dfa69c2ca77a7b88f382b410ea6fc2c338d7fc
+Author: Lance Freund <lancefreund@mail.weber.edu>
+Date:   Wed Dec 7 18:04:16 2016 -0700
+
+    folder is creating
+
+commit 7415492f3030cf3ca7442a7907563ac4ef295130
+Author: LanceFreund <lancefreund@mail.weber.edu>
+Date:   Tue Dec 6 13:39:41 2016 -0700
+
+    Update README.md
+
+commit 6ebf4110c7dcb452dec8b718d60f43c0c7aa0ff1
+Author: Lance Freund <lancefreund@mail.weber.edu>
+Date:   Mon Dec 5 16:44:55 2016 -0700
+
+    argument verification good
+
+commit 49e868bcdd28d977257218da95cfada8cb8d864f
+Author: LanceFreund <lancefreund@mail.weber.edu>
+Date:   Mon Dec 5 13:47:14 2016 -0700
+
+    Initial commit
