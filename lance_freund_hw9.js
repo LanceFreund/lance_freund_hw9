@@ -79,6 +79,8 @@ if(month.length < 2)
 exdate = year + '-' + month + '-' + day
 
 var exec = require('child_process').exec
-exec('scp lf14822@icarus.cs.weber.edu:/home/hvalle/submit/cs3030/files/FRED.csv ./' + dataFolder + '/' + month + '/' + dataFile + '.' + exdate, function(err,stdout,stderr){console.log('File transfer successful',stdout)})
+exec('scp lf14822@icarus.cs.weber.edu:/home/hvalle/submit/cs3030/files/FRED.csv ./' + dataFolder + '/' + month + '/' + dataFile + '.' + exdate, function(err,stdout,stderr){console.log('File is transferred ',stdout)})
+
+
 
 // end of file
