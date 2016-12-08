@@ -16,13 +16,6 @@ usage2 = 'Both arguments are required'
 var dataFolder = process.argv[3]
 var dataFile = process.argv[5]
 
-//var fso = require('fso').default
-//var FileSystemObject = require('fso').FileSystemObject
-
-//Erase these print statments at the end before submission of assignment
-console.log(dataFolder) // This should equal -c
-console.log(dataFile) // This should equal customerDataFolder
-
 
 if(process.argv[2] != "-c" || ! process.argv[3])
 {
@@ -86,9 +79,6 @@ if(month.length < 2)
 exdate = year + '-' + month + '-' + day
 
 var exec = require('child_process').exec
-exec('scp lf14822@icarus.cs.weber.edu:/home/hvalle/submit/cs3030/files/FRED.csv ./' + dataFolder + '/' + month + '/' + dataFile + '.' + exdate, function(err,stdout,stderr){console.log('Getting file from customer server',stdout)})
+exec('scp lf14822@icarus.cs.weber.edu:/home/hvalle/submit/cs3030/files/FRED.csv ./' + dataFolder + '/' + month + '/' + dataFile + '.' + exdate, function(err,stdout,stderr){console.log('File transfer successful',stdout)})
 
-//exec('cp ./fredData/12/FRED.csv ./fredData/12/FRED.csv.'+exdate, function(err,stdout,stderr){console.log('File located',stdout)})
-//
-
-console.log(exdate)
+// end of file
