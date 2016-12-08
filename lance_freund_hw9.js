@@ -43,16 +43,52 @@ else
 	}
 	else
 	{
-		console.log("Folder is missing.\nCreating folder.")
+		console.log("Customer " + dataFolder + " folder is missing.\nCreating folder.")
 		fs.mkdir(dataFolder)
+		fs.mkdir(dataFolder + '/01')
+		fs.mkdir(dataFolder + '/02')
+		fs.mkdir(dataFolder + '/03')
+		fs.mkdir(dataFolder + '/04')
+		fs.mkdir(dataFolder + '/05')
+		fs.mkdir(dataFolder + '/06')
+		fs.mkdir(dataFolder + '/07')
+		fs.mkdir(dataFolder + '/08')
+		fs.mkdir(dataFolder + '/09')
+		fs.mkdir(dataFolder + '/10')
+		fs.mkdir(dataFolder + '/11')
+		fs.mkdir(dataFolder + '/12')
 
 	}
 }
 
+var date = new Date()
+
+var day = date.getDate()
+var month = date.getMonth() + 1
+var year = date.getFullYear()
+
+if(day.length != 2)
+{
+	day = '0' + day
+}else
+{
+	day = day
+}
+
+if(month.length < 2)
+{
+	month = '0' + month
+}else
+{
+	month = month
+}
+
+exdate = year + '-' + month + '-' + day
+
 var exec = require('child_process').exec
-exec('scp lf14822@icarus.cs.weber.edu:/home/hvalle/submit/cs3030/files/FRED.csv ./fredData', function(err,stdout,stderr){console.log('Folder exists',stdout)})
+exec('scp lf14822@icarus.cs.weber.edu:/home/hvalle/submit/cs3030/files/FRED.csv ./' + dataFolder + '/' + month + '/' + dataFile + '.' + exdate, function(err,stdout,stderr){console.log('Getting file from customer server',stdout)})
 
-	
+//exec('cp ./fredData/12/FRED.csv ./fredData/12/FRED.csv.'+exdate, function(err,stdout,stderr){console.log('File located',stdout)})
+//
 
-
-
+console.log(exdate)
